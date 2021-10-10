@@ -1,0 +1,1 @@
+export const Profile = () => <h2>Página do perfil</h2>

@@ -1,0 +1,1 @@
+export const PostList = () => <h2>Lista de postagens</h2>

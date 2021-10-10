@@ -1,0 +1,1 @@
+export const Post = () => <h2>Página do post</h2>
