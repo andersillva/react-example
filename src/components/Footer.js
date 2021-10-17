@@ -1,13 +1,9 @@
-import { Component } from "react";
+import "../styles/styles.css";
 
-class Footer extends Component {
-    render() {
-        return (
-            <footer>
-                <div>Copyright &copy; Anderson 2021</div>
-            </footer>
-        )
-    }
-}
+const Footer = () => (
+    <footer className="border-top">
+        <div className="small text-center text-muted fst-italic">Copyright &copy; Anderson 2021</div>
+    </footer>
+);
 
 export default Footer;

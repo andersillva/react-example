@@ -1,15 +1,11 @@
-import React, { Component } from "react";
 import { Link } from "react-router-dom"
+import "../styles/styles.css";
 
-class PostTitle extends Component {
-    render() {
-        return (
-            <Link to={"/post/" + this.props.id}>
-                <h3>{this.props.title}</h3>
-                <h4>{this.props.summary}</h4>
-            </Link>
-        )
-    }
-}
+const PostHeading = ({ id, title, summary }) => (
+    <Link to={"/post/" + id}>
+        <h3 className="post-title">{title}</h3>
+        <h4 className="post-subtitle">{summary}</h4>
+    </Link>
+);
 
-export default PostTitle;
+export default PostHeading;

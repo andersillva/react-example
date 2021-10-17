@@ -1,16 +1,12 @@
-import { Component } from "react";
 import MainMenu from "./MainMenu";
 import AuthorBio from "./AuthorBio";
+import "../styles/styles.css";
 
-class Header extends Component {
-    render() {
-        return (
-            <header>
-                <MainMenu />
-                <AuthorBio />
-            </header>
-        )
-    }
-}
+const Header = () => (
+    <header className="masthead">
+        <MainMenu />
+        <AuthorBio />
+    </header>
+);
 
 export default Header;

@@ -1,16 +1,12 @@
-import React, { Component } from "react";
 import { Link } from "react-router-dom"
+import "../styles/styles.css";
 
-class PostInfo extends Component {
-    render() {
-        return (
-            <p>
-                Postado por&nbsp;
-                <Link to="/profile">{this.props.author_name}</Link>
-                &nbsp;em&nbsp;{this.props.created_date}
-            </p>
-        )
-    }
-}
+const PostInfo = ({ author_name, created_date }) => (
+    <p className="post-meta">
+        Postado por&nbsp;
+        <Link to="/profile">{author_name}</Link>
+        &nbsp;em&nbsp;{created_date}
+    </p>
+);
 
 export default PostInfo;
