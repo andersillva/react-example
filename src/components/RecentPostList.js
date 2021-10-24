@@ -1,17 +1,19 @@
 import { Link } from "react-router-dom"
 import PostItem from "./PostItem";
-import "../styles/styles.css";
+import { StyledRecentPostList } from "../styles/StyledRecentPostList";
 
 const RecentPostList = ({ posts }) => (
-    <section>
+    <StyledRecentPostList>
         <div>
-            <h2 className="page-title">Últimas do blog</h2>
+            <div>
+                <h1>Últimas do blog</h1>
+                {posts.map(p => <PostItem post={p} key={p.id} />)}
+                <div>
+                    <Link to="/postlist">Ver tudo →</Link>
+                </div>
+            </div>
         </div>
-        {posts.map(p => <PostItem post={p} key={p.id} />)}
-        <div className="d-flex justify-content-end mb-4">
-            <Link className="btn btn-primary text-uppercase" to="/postlist">Ver tudo →</Link>
-        </div>
-    </section>
+    </StyledRecentPostList>
 );
 
 export default RecentPostList;

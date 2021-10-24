@@ -1,9 +1,9 @@
-import "../styles/styles.css";
+import { StyledFooter } from "../styles/StyledFooter";
 
 const Footer = () => (
-    <footer className="border-top">
-        <div className="small text-center text-muted fst-italic">Copyright &copy; Anderson 2021</div>
-    </footer>
+    <StyledFooter>
+        <div>Copyright &copy; Anderson 2021</div>
+    </StyledFooter>
 );
 
 export default Footer;

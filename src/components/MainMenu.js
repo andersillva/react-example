@@ -1,18 +1,16 @@
 import { Link } from "react-router-dom"
-import "../styles/styles.css";
+import { StyledMainMenu } from "../styles/StyledMainMenu";
 
 const MainMenu = () => (
-    <nav className="navbar navbar-expand-lg navbar-light" id="mainNav">
-        <div className="container px-4 px-lg-5">
-            <div className="collapse navbar-collapse" id="navbarResponsive">
-                <ul className="navbar-nav ms-auto py-4 py-lg-0">
-                    <li className="nav-item"><Link className="nav-link px-lg-3 py-3 py-lg-4" to="/">Home</Link></li>
-                    <li className="nav-item"><Link className="nav-link px-lg-3 py-3 py-lg-4" to="/about">Sobre</Link></li>
-                    <li className="nav-item"><Link className="nav-link px-lg-3 py-3 py-lg-4" to="/description">Descrição</Link></li>
-                </ul>
-            </div>
+    <StyledMainMenu>
+        <div>
+            <ul>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/about">Sobre</Link></li>
+                <li><Link to="/description">Descrição</Link></li>
+            </ul>
         </div>
-    </nav>
+    </StyledMainMenu>
 );
 
 export default MainMenu;

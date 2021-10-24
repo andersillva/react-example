@@ -1,12 +1,12 @@
 import MainMenu from "./MainMenu";
 import AuthorBio from "./AuthorBio";
-import "../styles/styles.css";
+import { StyledHeader } from "../styles/StyledHeader";
 
 const Header = () => (
-    <header className="masthead">
+    <StyledHeader>
         <MainMenu />
         <AuthorBio />
-    </header>
+    </StyledHeader>
 );
 
 export default Header;
